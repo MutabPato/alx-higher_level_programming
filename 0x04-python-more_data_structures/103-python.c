@@ -47,5 +47,6 @@ void print_python_bytes(PyObject *p)
 	for (i = 0; i < 10 && i < size; ++i)
 		printf("%02x ", (unsigned char)PyBytes_AsString(p)[i]);
 
+	printf("%02x", 0);
 	printf("\n");
 }
