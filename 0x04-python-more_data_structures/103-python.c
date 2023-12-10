@@ -17,8 +17,8 @@ void print_python_list(PyObject *p)
 
 	for (i = 0; i < ((PyVarObject *)p)->ob_size; ++i)
 	{
-		item = PyList_GetItem(p, i);
-		printf("Element %ld: %s\n", i, Py_TYPE(item)->tp_name);
+		item = PyList_GetSlice(p, i, i + 1);
+		printf("Element %ld: %s\n", i, item->ob_type->tp_name);
 	}
 }
 
