@@ -2,7 +2,10 @@
 def safe_print_integer(value):
 
     try:
-        print("{:d}".format(value))
-        return (True)
+        if value is not None:
+            print("{:d}".format(value))
+            return (True)
+        else:
+            return (False)
     except ValueError:
         return (False)
