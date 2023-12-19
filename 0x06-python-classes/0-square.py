@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+"""No module description"""
+
+
 class Square:
-    """Defines a square
-    No further information
-    """
+    """Defines a square"""
     pass
