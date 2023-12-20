@@ -18,7 +18,10 @@ class Square:
 
     @property
     def size(self):
-        """retrieves size"""
+        """retrieves size
+        Returns:
+            int: size of square
+        """
         return(self.__size)
 
     @size.setter
