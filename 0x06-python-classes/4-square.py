@@ -28,7 +28,10 @@ class Square:
     def size(self, value):
         """sets size to value
         Arguments:
-            value: value to be set
+            value(int): value to set as new size
+        Raises:
+            TypeError: If the provided value is not an integer.
+            ValueError: If the provided value is less than 0.
         """
         if type(value) is not int:
             raise TypeError('size must be an integer')
