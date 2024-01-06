@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""
+
+defines a rectangle
+
+"""
+
 
 class Rectangle:
     """
 
-    defines a rectangle
+    no module
 
     """
     pass
