@@ -1,0 +1,10 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> integer_validator("my_int", 12)
+>>> integer_validator("width", 89)
+>>> integer_validator("name", "John")
+name must be an integer
+>>> integer_validator("age", 0)
+age must be greater than 0
+>>> integer_validator("distance", -4)
+distance must be greater than 0
+
