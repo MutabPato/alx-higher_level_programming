@@ -6,7 +6,6 @@ No class created
 """
 
 
-
 def class_to_json(obj):
     """
 
