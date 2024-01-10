@@ -5,7 +5,6 @@ No class created
 
 """
 
-json = __import__('json')
 
 
 def class_to_json(obj):
@@ -15,6 +14,4 @@ def class_to_json(obj):
 
     """
 
-    json_obj = json.dumps(obj.__dict__)
-
-    return (json_obj)
+    return (obj.__dict__)
