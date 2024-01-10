@@ -5,8 +5,7 @@ No class created
 
 """
 
-
-import json
+json = __import__('json')
 
 
 def class_to_json(obj):
