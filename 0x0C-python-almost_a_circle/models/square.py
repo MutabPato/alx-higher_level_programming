@@ -12,48 +12,44 @@ class Square(Rectangle):
     """
 
     def __init__(self, size, x=0, y=0, id=None):
+        """
+        Initializes square
+        """
+
         super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
+        """
+        Get size
+        """
+
         return (self._Rectangle__width)
 
     @size.setter
-    def width(self, value):
+    def size(self, value):
+        """
+        Set size
+        """
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
         self.width = value
-    """
-    @property
-    def x(self):
-        return (self.x)
 
-    @x.setter
-    def x(self, value):
-        if not isinstance(value, int):
-            raise TypeError("x must be an integer")
-        if value < 0:
-            raise ValueError("x must be >= 0")
-        self.x = value
-
-    @property
-    def y(self):
-        return (self.y)
-
-    @y.setter
-    def y(self, value):
-        if not isinstance(value, int):
-            raise TypeError("y must be an integer")
-        if value < 0:
-            raise ValueError("y must be >= 0")
-        self.y = value
-    """
     def area(self):
+        """
+        Return: area
+        """
+
         return (self.width * self.height)
 
     def display(self):
+        """
+        Displays square
+        """
+
         for i in range(self.y):
             print()
         for i in range(self.height):
@@ -64,9 +60,17 @@ class Square(Rectangle):
             print()
 
     def __str__(self):
+        """"
+        Return: string representation of a square
+        """
+
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}")
 
     def update(self, *args, **kwargs):
+        """
+        Updates square class arguments
+        """
+
         if len(args) > 0:
             self.id = args[0]
         if len(args) > 1:
@@ -90,4 +94,8 @@ class Square(Rectangle):
                 self.y = value
 
     def to_dictionary(self):
+        """
+        Returns: dictionary representation of a square
+        """
+
         return ({'id': self.id, 'x': self.x, 'size': self.size, 'y': self.x})
