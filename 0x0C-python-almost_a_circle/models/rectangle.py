@@ -169,5 +169,5 @@ class Rectangle(Base):
         Converts the rectangle's attributes to a dictionary.
         """
 
-        return({'x': self.__x, 'y': self.__y,
+        return({'x': self.__x, 'y': self.__y, 'id': self.id,
                 'height': self.__height, 'width': self.__width})
