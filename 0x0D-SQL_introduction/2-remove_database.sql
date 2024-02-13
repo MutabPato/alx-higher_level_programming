@@ -1,2 +1,2 @@
 -- deletes a databases in my MySQL server
-DROP DATABASE IF NOT EXISTS hbtn_0c_0
+DROP DATABASE IF EXISTS hbtn_0c_0
