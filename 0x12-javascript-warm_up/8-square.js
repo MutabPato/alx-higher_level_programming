@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const { argv } = require('node:process');
 
-let size = argv[2];
+const size = argv[2];
 
 if (!parseInt(size)) {
   console.log('Missing size');
@@ -9,15 +9,12 @@ if (!parseInt(size)) {
 
 let i = 0;
 let j = 0;
-let square = '';
+let row = '';
 
-while (i < size) {
-  
-  for (j = 0; j < size; j++) {
-    square =+ 'X';
-  }
-  square =+ '';
-  i++;
+for (i = 0; i < size; i++) {
+  row += 'X';
 }
 
-console.log(square);
+for (j = 0; j < size; j++) {
+  console.log(row);
+}
