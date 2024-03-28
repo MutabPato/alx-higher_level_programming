@@ -5,6 +5,5 @@ import sys
 
 
 with urllib.request.urlopen(sys.argv[1]) as response:
-    request = response.headers.get('X-Request-Id')
-
+    request = response.info.get('X-Request-Id')
 print(request)
