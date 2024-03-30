@@ -13,8 +13,8 @@ if __name__ == "__main__":
     password = sys.argv[2]
     url = "https://api.github.com/user"
 
-    credentials = {'username': username, 'password': password}
-    r = requests.get(url, data=credentials)
+    credentials = HTTPBasicAuth(username, password)
+    r = requests.get(url, auth=credentials)
 
     json_r = r.json()
     print(json_r.get('id'))
