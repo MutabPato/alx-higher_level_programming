@@ -7,12 +7,12 @@ if (process.argv.length < 2) {
   process.exit(1);
 }
 
-const URL = process.argv[1];
+const URL = process.argv[2];
 
 request.get(URL, (err, res) => {
   if (err) {
-	  console.error('Error: ', err);
-	  return;
+    console.error('Error: ', err);
+    return;
   }
   console.log('Code: ', res.statusCode);
 });
