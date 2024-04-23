@@ -11,8 +11,8 @@ const URL = process.argv[2];
 
 request.get(URL, (err, res) => {
   if (err) {
-    console.error('Error: ', err);
+    console.error('Error:', err);
     return;
   }
-  console.log('Code: ', res.statusCode);
+  console.log('Code:', res.statusCode);
 });
