@@ -3,7 +3,7 @@
 const request = require('request');
 
 if (process.argv.length < 2) {
-  console.error('Usage: 0-readme.js <URL>');
+  console.error('Usage: 2-statuscode.js <URL>');
   process.exit(1);
 }
 
@@ -14,5 +14,5 @@ request.get(URL, (err, res) => {
     console.error('Error:', err);
     return;
   }
-  console.log('Code:', res.statusCode);
+  console.log('code:', res.statusCode);
 });
