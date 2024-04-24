@@ -19,7 +19,7 @@ request.get(apiURL, (err, res, body) => {
       if (tasksCompletedByUser[todo.userId]) {
         tasksCompletedByUser[todo.userId]++;
       } else {
-        tasksCompletedByUser[todo.userId] = 1;
+        tasksCompletedByUser[todo.userId] = 0;
       }
     }
   });
