@@ -23,5 +23,5 @@ request.get(apiURL, (err, res, body) => {
       }
     }
   });
-  Object.entries(tasksCompletedByUser).forEach(([userId, tasksCompleted]) => { console.log(`${userId}: ${tasksCompleted}`); });
+  console.log(tasksCompletedByUser);
 });
